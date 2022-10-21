@@ -22,12 +22,12 @@ for i in df['Custom']:
         print(fideimg)
         print(counter)
         fideimgArr.append("https://players.chessbase.com"+fideimg)
-        counter = counter + 1
+        counter += 1
 
     except Exception as e:
         print(e)
         print("Failed")
-        counter = counter + 1
+        counter +=1
 
 
 df1 = pd.DataFrame(fideIdArr, columns=['fideID'])
